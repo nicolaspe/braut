@@ -5,11 +5,12 @@ html {
 }
 
 body {
-  background-color: white;
-  font-family: sans-serif;
+  background-color: rgb(66, 25, 33);
+  color: rgb(255, 255, 255);
+  font-family: fantasy;
+  text-align: center;
   display: table-cell;
   vertical-align: middle;
-  background-color: rgb(240, 240, 240);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 5px;
@@ -20,6 +21,10 @@ header {
   clear: both;
 }
 
+textarea {
+  vertical-align: top;
+}
+
 .elem {
   float: left;
   margin: 5px;
@@ -28,4 +33,13 @@ header {
   border: none;
   /*background-color: rgb(240,240,240);*/
   vertical-align: middle;
+}
+
+address {
+  font-size: 90%;
+}
+
+.desc {
+  color: lightgray;
+  /*text-align: left;*/
 }
