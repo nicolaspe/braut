@@ -25,6 +25,25 @@ textarea {
   vertical-align: top;
 }
 
+a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+.link{
+  padding: 10px;
+}
+.link:hover{
+  background-color: #111111;
+}
+
+.desc {
+  color: lightgray;
+  /*text-align: left;*/
+}
+
 .elem {
   float: left;
   margin: 5px;
@@ -37,9 +56,4 @@ textarea {
 
 address {
   font-size: 90%;
-}
-
-.desc {
-  color: lightgray;
-  /*text-align: left;*/
 }
