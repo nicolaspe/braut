@@ -1,0 +1,31 @@
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgb(240, 240, 240);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 5px;
+}
+
+header {
+  padding: 1em;
+  clear: both;
+}
+
+.elem {
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  max-width: 500px;
+  border: none;
+  /*background-color: rgb(240,240,240);*/
+  vertical-align: middle;
+}
