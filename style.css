@@ -33,10 +33,10 @@ a{
   border: none;
 }
 .link{
-  padding: 10px;
+  padding: 8px;
 }
 .link:hover{
-  background-color: #111111;
+  background-color: rgb(206, 120, 37);;
 }
 
 .desc {
@@ -55,5 +55,6 @@ a{
 }
 
 address {
+  margin-top: 8px;
   font-size: 90%;
 }
