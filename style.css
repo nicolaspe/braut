@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: rgb(66, 25, 33);
+  background-color: rgb(98, 25, 33);
   color: rgb(255, 255, 255);
   font-family: fantasy;
   text-align: center;
@@ -52,6 +52,17 @@ a{
   border: none;
   /*background-color: rgb(240,240,240);*/
   vertical-align: middle;
+}
+
+table, th, td {
+  color: white;
+  border: none;
+  border-collapse: collapse;
+}
+
+table#cerv {
+  width: 80%;
+  max-width: 420px;
 }
 
 address {

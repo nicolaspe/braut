@@ -12,65 +12,37 @@
     </header>
 
     <script>
-    var boolBG = 0;
-    var boolBS = 0;
-    var boolCS = 0;
+    function clearDisp(){
+      document.getElementById("desc_cerv").innerHTML = "";
+    }
     function dispBG(){
-      if (boolBG == 0){
-        boolBG = 1;
-      }
-      else {
-        boolBG = 0;
-      }
-      if (boolBG == 1){
-        document.getElementById("BG").innerHTML = "Cerveza de inspiración belga, de color dorado con leves tonos a grano y olor y sabor a lúpulos frutales cuidadosamente seleccionados."
-      }
-      else {
-        document.getElementById("BG").innerHTML = ""
-      }
+      document.getElementById("desc_cerv").innerHTML = "Cerveza de inspiración belga, de color dorado con leves tonos a grano y olor y sabor a lúpulos frutales cuidadosamente seleccionados."
     }
     function dispBS(){
-      if (boolBS == 0){
-        boolBS = 1;
-      }
-      else {
-        boolBS = 0;
-      }
-      if (boolBS == 1){
-        document.getElementById("BS").innerHTML = "[Descipción Belgian Strong Dark Ale]"
-      }
-      else {
-        document.getElementById("BS").innerHTML = ""
-      }
+      document.getElementById("desc_cerv").innerHTML = "[Descripción Belgian Strong Dark Ale]"
     }
     function dispCS(){
-      if (boolCS == 0){
-        boolCS = 1;
-      }
-      else {
-        boolCS = 0;
-      }
-      if (boolCS == 1){
-        document.getElementById("CS").innerHTML = "[Descripción Cream Stout]"
-      }
-      else {
-        document.getElementById("CS").innerHTML = ""
-      }
+      document.getElementById("desc_cerv").innerHTML = "[Descripción English Cream Stout]"
     }
     </script>
 
-    <input type="image" src="belgianGolden.jpg" alt="Belgian Golden Ale" width=50% max-width="180px"
-    onclick="dispBG()"/> <br />
-    Belgian Golden Ale
-    <p id="BG" class="desc"></p> <br /><br />
 
-    <input type="image" src="belgianStrong.jpg" alt="Belgian Strong Dark Ale" width="50%" max-width="180px" onclick="dispBS()" /> <br />
-    Belgian Strong Dark Ale
-    <p id="BS" class="desc"></p> <br /><br />
+    <table>
+      <tr>
+        <td>
+          <input type="image" src="belgianGolden.jpg" alt="Belgian Golden Ale" width=80% max-width="180px" onmouseover="dispBG()" /><br /> <p>Belgian Golden Ale</p>
+        </td>
+        <td>
+          <input type="image" src="belgianStrong.jpg" alt="Belgian Strong Dark Ale" width="80%" max-width="180px" onmouseover="dispBS()" /> <br />
+          <p>Belgian Strong Dark Ale</p>
+        </td>
+        <td>
+          <input type="image" src="creamStout.jpg" alt="Cream Stout" width="80%" max-width="180px" onmouseover="dispCS()" /> <br /> <p>English Cream Stout</p>
+        </td>
+      </tr>
+    </table>
 
-    <input type="image" src="creamStout.jpg" alt="Cream Stout" width="50%" max-width="180px" onclick="dispCS()" /> <br />
-    English Cream Stout
-    <p id="CS" class="desc"></p> <br /><br />
+    <p id="desc_cerv"></p>
 
     <hr />
     <a href="braut.html" class="link">Home</a> |
