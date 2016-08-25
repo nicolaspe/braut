@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  background-color: rgb(98, 25, 33);
-  color: rgb(255, 255, 255);
+  color: rgb(78, 35, 9);
+  background-color: rgb(237, 215, 201);
   font-family: fantasy;
   text-align: center;
   display: table-cell;
@@ -20,6 +20,9 @@ header {
   padding: 1em;
   clear: both;
 }
+header img {
+  height: 3em;
+}
 
 textarea {
   vertical-align: top;
@@ -27,7 +30,7 @@ textarea {
 
 a{
   display: inline-block;
-  color: white;
+  color: brown;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -36,11 +39,13 @@ a{
   padding: 8px;
 }
 .link:hover{
-  background-color: rgb(206, 120, 37);;
+  background-color: rgb(78, 35, 9);
+  color: rgb(237, 215, 201);
 }
 
 .desc {
-  color: lightgray;
+  font-size: 90%;
+  /*color: brown;*/
   /*text-align: left;*/
 }
 
