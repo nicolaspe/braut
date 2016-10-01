@@ -4,14 +4,39 @@
     <meta charset="utf-8">
     <title>Cerveza Braut</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <h1>Nuestras cervezas</h1>
-      <hr>
+    <nav class="col-2">
+      <!-- <img src="logo/braut_logo1.png" alt="Cerveza Braut" /> -->
+      <ul id="menu_full">
+        <li><a href="braut.html">Home</a></li>
+        <li><a href="cervezas.html">Cervezas</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li>
+          <table class="socialmedia">
+          <tr>
+            <td><a href="https://facebook.com/CervezaBraut"><input type="image" src="social/FB-f-Logo__blue_512.png" alt="Facebook" onmouseover="desc_facebook()" /></a></td>
+            <td><a href="https://twitter.com/CervezaBraut"><input type="image" src="social/Twitter_Logo_White_On_Blue.png" alt="Twitter" onmouseover="desc_twitter()" /></a></td>
+            <td><a href="https://instagram.com/cervezabraut"><input type="image" src="social/glyph-logo_May2016.png" alt="Instagram" onmouseover="desc_instagram()" /></a></td>
+          </tr>
+          </table>
+      </li>
+      </ul>
+    </nav>
+
+    <header class="cont col-8">
+      Nuestras cervezas
     </header>
 
-    <main>
+    <main class="cont col-8">
+      <ul class="bier">
+        <li><input type="image" src="logo/600px-Logo.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        <li><input type="image" src="logo/600px-Logo.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        <li><input type="image" src="logo/600px-Logo.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        <li><input type="image" src="logo/600px-Logo.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+      </ul>
       <img src="belgianGolden.jpg" alt="Belgian Golden Ale" width=50% max-width="180px"/> <br />
       Belgian Golden Ale
       <p id="BG" class="desc">Cerveza de inspiración belga, de color dorado con leves tonos a grano y olor y sabor a lúpulos frutales cuidadosamente seleccionados.</p> <br /><br />
@@ -24,17 +49,5 @@
       English Cream Stout
       <p id="CS" class="desc">[Descripción English Cream Stout]</p> <br /><br />
     </main>
-    <hr />
-    <footer>
-      <a href="braut.html" class="link">Home</a> |
-      <a href="http://facebook.com/CervezaBraut" class="link">Faceboook</a> |
-      <a href="http://instagram.com/cervezabraut" class="link">Instagram</a> |
-      <a href="http://twitter.com/CervezaBraut" class="link">Twitter</a>
-      <address>
-        cervezabraut@gmail.com<br />
-        Santiago, Chile<br />
-        Agosto 2016
-      </address>
-    </footer>
   </body>
 </html>

@@ -4,27 +4,39 @@
     <meta charset="utf-8">
     <title>Cerveza Braut</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <header>
-      <h1><img src="logo/braut_logo1.png" alt="Cerveza Braut" /></h1>
-    </header>
-    <a href="cervezas.html">
-      <img src="presentation.jpg" alt="Braut beer" width=50% max-width="180px" />
-    </a>
-    <h2>pronto...</h2>
-    <hr />
+    <div class="row">
+      <nav class="col-2">
+        <!-- <img src="logo/braut_logo1.png" alt="Cerveza Braut" /> -->
+        <ul id="menu_full">
+          <li><a href="braut.html">Home</a></li>
+          <li><a href="cervezas.html">Cervezas</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <table class="socialmedia">
+            <tr>
+              <td><a href="https://facebook.com/CervezaBraut"><input type="image" src="social/FB-f-Logo__blue_512.png" alt="Facebook" onmouseover="desc_facebook()" /></a></td>
+              <td><a href="https://twitter.com/CervezaBraut"><input type="image" src="social/Twitter_Logo_White_On_Blue.png" alt="Twitter" onmouseover="desc_twitter()" /></a></td>
+              <td><a href="https://instagram.com/cervezabraut"><input type="image" src="social/glyph-logo_May2016.png" alt="Instagram" onmouseover="desc_instagram()" /></a></td>
+            </tr>
+            </table>
+        </li>
+        </ul>
+      </nav>
+      <header class="cont col-8">
+        <img src="logo/braut_logo1.png" alt="Cerveza Braut"/>
+      </header>
+    </div>
 
-    <footer>
-      <a href="http://facebook.com/CervezaBraut" class="link">Faceboook</a> |
-      <a href="http://instagram.com/cervezabraut" class="link">Instagram</a> |
-      <a href="http://twitter.com/CervezaBraut" class="link">Twitter</a>
-      <address>
-        cervezabraut@gmail.com<br />
-        Santiago, Chile<br />
-        Agosto 2016
-      </address>
-    </footer>
+    <div class="row">
+      <article class="cont col-8">
+
+      </article>
+    </div>
+
   </body>
 </html>

@@ -12,84 +12,99 @@
     padding: 10px;
 }
 
+
 html {
   font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
   padding: 5px;
   background: white;
   margin: auto;
-  /*background: white;*/
   background-color: rgb(237, 215, 201);
   color: rgb(78, 35, 9);
 }
 
 body {
-  margin: 0;
-}
-/* navigation bar */
-nav {
+  /*font-family: fantasy;*/
   text-align: center;
-  background: white;
+  display: table-cell;
   vertical-align: middle;
-  height: 100%;
-  position: fixed;
-  /*float: left;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 5px;
+}
+nav {
+  background-color: rgb(237, 215, 201);
+  vertical-align: middle;
+  clear: both;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 nav li {
   display: block;
-  padding: 5px
-}
-a {
+  text-align: right;
   padding: 5px;
-  color: rgb(78, 35, 9);
-  text-decoration: none;
-  display: block;
 }
-a:hover {
-  color: red;
-}
-
-table.socialmedia, th, td {
-  border: 0px;
-  border-collapse: collapse;
-  padding: 2px;
-  width: auto;
-}
-
 header {
-  text-align: center;
-  display: table-cell;
-  text-align: center;
-  /*height: 4em;*/
-  font-size: 2.5em;
-  font-weight: bold;
+  padding: 1em;
+  clear: both;
 }
 header img {
-  max-width: 400px;
-  /*max-height: 10em;*/
-}
-main {
-  text-align: center;
-}
-ul.bier {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-}
-ul.bier input {
-  max-width: 10%;
-}
-ul.bier li {
-  display: inline;
-  padding: 5px;
+  height: 3.8em;
 }
 
+textarea {
+  vertical-align: top;
+}
+
+a{
+  display: inline-block;
+  color: brown;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+.link{
+  padding: 8px;
+}
+.link:hover{
+  background-color: rgb(78, 35, 9);
+  color: rgb(237, 215, 201);
+}
+
+.desc {
+  font-size: 90%;
+  /*color: brown;*/
+  /*text-align: left;*/
+}
+
+.elem {
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  max-width: 500px;
+  border: none;
+  /*background-color: rgb(240,240,240);*/
+  vertical-align: middle;
+}
+
+table, th, td {
+  color: white;
+  border: none;
+  border-collapse: collapse;
+}
+
+table#cerv {
+  width: 80%;
+  max-width: 420px;
+}
+
+address {
+  margin-top: 8px;
+  font-size: 90%;
+}
 
 .socialmedia {
   /*margin-top: 8px;*/
@@ -98,7 +113,7 @@ ul.bier li {
 }
 .socialmedia input{
   width: 2em;
-  margin: 2px;
+  margin: 5px;
   vertical-align: middle;
 }
 
@@ -112,12 +127,6 @@ ul.bier li {
 table.socialmedia, th, td {
   margin-right: auto;
   margin-left: auto;
-}
-nav {
-  position: relative;
-}
-.cont {
-  margin-left: inherit;
 }
 @media only screen and (min-width: 650px) {
     /* For desktop: */
@@ -137,11 +146,5 @@ nav {
     table.socialmedia, th, td {
       margin-right: 0px;
       margin-left: auto;
-    }
-    nav {
-      position: fixed;
-    }
-    .cont {
-      margin-left: 20%;
     }
 }
