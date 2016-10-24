@@ -3,40 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Cerveza Braut</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_new.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div class="row">
-      <nav class="col-2">
-        <!-- <img src="logo/braut_logo1.png" alt="Cerveza Braut" /> -->
-        <ul id="menu_full">
-          <li><a href="braut.html">Home</a></li>
-          <li><a href="cervezas.html">Cervezas</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li>
-            <table class="socialmedia">
-            <tr>
-              <td><a href="https://facebook.com/CervezaBraut"><input type="image" src="social/FB-f-Logo__blue_512.png" alt="Facebook" onmouseover="desc_facebook()" /></a></td>
-              <td><a href="https://twitter.com/CervezaBraut"><input type="image" src="social/Twitter_Logo_White_On_Blue.png" alt="Twitter" onmouseover="desc_twitter()" /></a></td>
-              <td><a href="https://instagram.com/cervezabraut"><input type="image" src="social/glyph-logo_May2016.png" alt="Instagram" onmouseover="desc_instagram()" /></a></td>
-            </tr>
-            </table>
-        </li>
-        </ul>
-      </nav>
-      <header class="cont col-8">
-        <img src="logo/braut_logo1.png" alt="Cerveza Braut"/>
-      </header>
-    </div>
+    <nav class="col-0 dropdown">
+      <ul id="menu_title">
+        <li><a href="#">Menu</a></li>
+      </ul>
+      <!-- <img src="logo/braut_logo1.png" alt="Cerveza Braut" /> -->
+      <ul class="dropdown-content" id="menu_full">
+        <li><a href="braut.html">Home</a></li>
+        <li><a href="cervezas.html">Cervezas</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <span class="socialmedia" style="float:right">
+          <li><a href="https://facebook.com/CervezaBraut"><input type="image" src="social/FB-f-Logo__blue_512.png" alt="Facebook" onmouseover="desc_facebook()" /></a></li>
+          <li><a href="https://twitter.com/CervezaBraut"><input type="image" src="social/Twitter_Logo_White_On_Blue.png" alt="Twitter" onmouseover="desc_twitter()" /></a></li>
+          <li><a href="https://instagram.com/cervezabraut"><input type="image" src="social/glyph-logo_May2016.png" alt="Instagram" onmouseover="desc_instagram()" /></a></li>
+        </span>
+      </ul>
+    </nav>
 
-    <div class="row">
-      <article class="cont col-8">
-
-      </article>
-    </div>
+    <header class="col-0">
+      <img src="logo/braut_logo1.png" alt="Cerveza Braut"/>
+    </header>
 
   </body>
 </html>
