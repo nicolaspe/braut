@@ -10,6 +10,7 @@
 [class*="col-"] {
     float: left;
     padding: 10px;
+    /*background: inherit;*/
 }
 
 html {
@@ -17,12 +18,12 @@ html {
   /*padding: 5px;*/
   background: white;
   margin: auto;
-  /*background: white;*/
-  background-color: rgb(237, 215, 201);
+  background: white;
   color: rgb(78, 35, 9);
 }
 
 body {
+  background-color: rgb(237, 215, 201);
   margin: 0;
 }
 /* navigation bar */
@@ -43,7 +44,6 @@ nav ul {
 }
 nav li {
   display: inline;
-  /*padding: 5px;*/
   float: left;
 }
 
@@ -82,8 +82,9 @@ header {
   /*height: 4em;*/
   font-size: 2.5em;
   font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  padding: 0.5em 0em 3em 0em;
+  background-color: rgb(237, 215, 201);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.2);
 }
 header img {
   max-width: 400px;
@@ -92,6 +93,7 @@ header img {
 main {
   text-align: center;
 }
+header.logo{ margin-top: 2em}
 
 ul.bier {
   list-style-type: none;
@@ -100,7 +102,6 @@ ul.bier {
   overflow: auto;
 }
 ul.bier input {
-  /*max-width: 10%;*/
   max-width: 8em;
 }
 ul.bier li {
@@ -109,7 +110,13 @@ ul.bier li {
 }
 
 .cont {
-  /*background: #F4F4F4;*/
+  display: block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.contacto {
+  background: #F4F4F4;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.2);
 }
 
 
@@ -142,11 +149,27 @@ ul.bier li {
   font-size: 1.5em;
 }
 
+#desc_us {
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
 #menu_full {
+  text-align: center;
+}
+.cont {
+  text-align: center;
+}
+.cont h3 {
+  text-align: center;
+}
+.cont ul {
   text-align: center;
 }
 .dropdown-content {display: none;}
@@ -172,4 +195,7 @@ ul.bier li {
     #menu_title {display: none;}
     .dropdown-content {display: block;}
     ul.bier li { display: block;}
+    .desc { text-align: left;}
+    .cont h3 { text-align: left;}
+    .cont ul { text-align: right;}
 }

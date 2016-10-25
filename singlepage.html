@@ -13,10 +13,10 @@
       </ul>
       <!-- <img src="logo/braut_logo1.png" alt="Cerveza Braut" /> -->
       <ul class="dropdown-content" id="menu_full">
-        <li><a href="braut.html">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#cervezas">Cervezas</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#us">Nosotros</a></li>
+        <!-- <li><a href="#contact">Contacto</a></li> -->
         <span class="socialmedia" style="float:right">
           <li><a href="https://facebook.com/CervezaBraut"><input type="image" src="social/FB-f-Logo__blue_512.png" alt="Facebook" onmouseover="desc_facebook()" /></a></li>
           <li><a href="https://twitter.com/CervezaBraut"><input type="image" src="social/Twitter_Logo_White_On_Blue.png" alt="Twitter" onmouseover="desc_twitter()" /></a></li>
@@ -25,52 +25,74 @@
       </ul>
     </nav>
 
-    <header class="col-0">
-      <img src="logo/braut_logo1.png" alt="Cerveza Braut"/>
-    </header>
-    <header class="col-0">
+    <header class="col-0 logo">
+      <img id="home" src="logo/braut_logo1.png" alt="Cerveza Braut"/>
+      <br />
       <img src="presentation.jpg" alt="Cerveza Braut"/>
+      <br /><br />
     </header>
 
-    <header class="cont col-0" id="cervezas">
-      Nuestras cervezas
-    </header>
+    <main class="cont">
+      <h1 class="col-0" id="cervezas">
+        Nuestras cervezas
+      </h1>
 
-    <main class="cont col-2">
-      <ul class="bier">
-        <li><input type="image" src="imgs/600px-BG.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
-      </ul>
+      <div class="col-2">
+        <ul class="bier">
+          <li><input type="image" src="imgs/600px-BG.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        </ul>
+      </div>
+      <div class=" cont col-8">
+        <h3>Belgian Golden Ale</h3>
+        <p id="BG" class="desc">Cerveza de inspiración belga, de color dorado con leves tonos a grano y olor y sabor a lúpulos frutales cuidadosamente seleccionados.</p> <br /><br />
+      </div>
+
+      <div class="col-2">
+        <ul class="bier">
+          <li><input type="image" src="imgs/600px-BDS.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <h3>Belgian Strong Dark Ale</h3>
+        <p id="BS" class="desc">Cerveza de inspiración belga. Una cerveza de carácter fuerte color ámbar oscuro, aromas a canela y naranja. Con un amargor leve, presenta sabores típicos de las cervezas belgas con suaves notas frutales y herbales.</p> <br /><br />
+      </div>
+
+      <div class="col-2">
+        <ul class="bier">
+          <li><input type="image" src="imgs/600px-WB.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <h3>Malted Witbier</h3>
+        <p id="WB" class="desc">Cerveza de trigo de tradición belga, pero modificada al usar trigos malteados. De cuerpo moderado y tonos especiados y florales para otorgar una gran frescura.</p> <br /><br />
+      </div>
+
+      <div class="col-2">
+        <ul class="bier">
+          <li><input type="image" src="imgs/600px-CS.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <h3>English Cream Stout</h3>
+        <p id="CS" class="desc">Cerveza de inspiración inglesa. Cuenta con tres tonos tostados, perfectamente balanceados, además de un cuerpo potente y un amargor delicado.</p> <br /><br />
+      </div>
     </main>
-    <main class="cont col-8">
-      <h3>Belgian Golden Ale</h3>
-      <p id="BG" class="desc">Cerveza de inspiración belga, de color dorado con leves tonos a grano y olor y sabor a lúpulos frutales cuidadosamente seleccionados.</p> <br /><br />
-    </main>
-    <main class="cont col-2">
-      <ul class="bier">
-        <li><input type="image" src="imgs/600px-BDS.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
-      </ul>
-    </main>
-    <main class="cont col-8">
-      <h3>Belgian Strong Dark Ale</h3>
-      <p id="BS" class="desc">Cerveza de inspiración belga. Una cerveza de carácter fuerte color ámbar oscuro, aromas a canela y naranja. Con un amargor leve, presenta sabores típicos de las cervezas belgas con suaves notas frutales y herbales.</p> <br /><br />
-    </main>
-    <main class="cont col-2">
-      <ul class="bier">
-        <li><input type="image" src="imgs/600px-WB.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
-      </ul>
-    </main>
-    <main class="cont col-8">
-      <h3>Malted Witbier</h3>
-      <p id="WB" class="desc">Cerveza de trigo de tradición belga, pero modificada al usar trigos malteados. De cuerpo moderado y tonos especiados y florales para otorgar una gran frescura.</p> <br /><br />
-    </main>
-    <main class="cont col-2">
-      <ul class="bier">
-        <li><input type="image" src="imgs/600px-CS.png" alt="Belgian Golden Ale" onmouseover="desc_BGA()" /></li>
-      </ul>
-    </main>
-    <main class="cont col-8">
-      <h3>English Cream Stout</h3>
-      <p id="CS" class="desc">Cerveza de inspiración inglés. Cuenta con tres tonos tostados, perfectamente balanceados, además de un cuerpo potente y un amargor delicado.</p> <br /><br />
+
+    <main class="cont col-0"> <hr /> </main>
+
+    <main class="contacto">
+      <h1 class="col-0" id="us">Nosotros</h1>
+      <p id="desc_us">
+        Somos un grupo multidisciplinario de ex-alumnos del Colegio Alemán con una gran pasión por la cerveza y la exploración de nuevos sabores.
+      </p>
+      <p id="desc_us">
+        Con dos años de trayectoria y perfeccionamiento, hemos logrado llegar a cuatro recetas especializadas, obteniendo inspiración de selectos estilos europeos.
+      </p>
+      <p id="desc_us">
+        Pueden escribirnos a:
+      </p>
+      <p> cervezabraut @ gmail . com</p>
+      <br /><br />
     </main>
 
   </body>
